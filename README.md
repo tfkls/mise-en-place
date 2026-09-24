@@ -46,6 +46,7 @@ The code block above produces the following output:
 |:---:|:---:|---|
 | `..args` | - | List of positional arguments that make up the recipe. Each item must be either an `ingredient` or a `step`, else the function will panic. |
 | `columns` | `array` | Array of `length` that specifies the width of each column in the recipe table. Defaults to `auto` for first column and `1fr` for all others. |
+| `color`   | `color` | Color to use for the outline of the recipe. Defaults to `rgb("40A040")` (green). |
 
 ### `ingredient()`
 

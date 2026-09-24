@@ -1,6 +1,6 @@
 #import "internal.typ": *
 
-#let recipe(columns: none, ..args) = {
+#let recipe(columns: none, color: rgb("40A040"), ..args) = {
   // assert(args.named().len() == 0, message: "recipe cannot contain named args")
 
   for obj in args.pos() {
@@ -142,8 +142,8 @@
 
   table(
     stroke: frame(
-      1.5pt + rgb("40A040"),
-      0.75pt + rgb("40A040"),
+      1.5pt + color,
+      0.75pt + color,
     ),
     align: horizon + center,
     inset: (x: 0.30em, y: 0.30em),
